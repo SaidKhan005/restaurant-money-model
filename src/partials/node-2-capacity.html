@@ -1,0 +1,815 @@
+            <!-- Node 2: CAPACITY -->
+            <div class="flow-node node-2" id="capacity">
+                <div class="node-card">
+                    <div class="node-header">
+                        <div class="node-number">2</div>
+                        <div class="node-title-section">
+                            <h2 class="node-title">CAPACITY</h2>
+                            <p class="node-subtitle">Guest Fulfilment Engine</p>
+                        </div>
+                    </div>
+
+                    <div class="core-question">
+                        <h4>Core Question</h4>
+                        <p>"Can we serve this demand without degrading the guest experience?"</p>
+                        <div class="problem-type">Problem Being Solved: Operational bottleneck</div>
+                    </div>
+
+                    <div class="node-content">
+
+                        <!-- What Capacity Really Means — Hook (always visible) -->
+                        <div class="insight-box" style="grid-column: 1 / -1;">
+                            <h4>💡 What Capacity Really Means</h4>
+                            <p style="margin-bottom: 10px;">
+                                Capacity is not how many seats we have.
+                            </p>
+                            <p style="margin-bottom: 10px;">
+                                Capacity is how many guests we can take care of
+                                <br />
+                                <strong>while honoring the standard of experience we’ve committed to creating.</strong>
+                            </p>
+                            <p style="margin-bottom: 0; color: #a0aec0; font-style: italic;">
+                                Every formula in this section exists to protect that commitment.
+                            </p>
+                        </div>
+
+                        <!-- What You Measure -->
+                        <div class="content-box">
+                            <h4>✓ What You Measure</h4>
+                            <p style="margin-bottom: 10px; color: #a0aec0;">These two numbers tell us whether we can
+                                handle what is walking through the door:</p>
+                            <ul class="metric-list">
+                                <li>Guest Capacity</li>
+                                <li>Capacity Load (The Go to Metric for Capacity Management)</li>
+                            </ul>
+                        </div>
+
+                        <!-- What Feeds Into These Numbers -->
+                        <div class="content-box">
+                            <h4>✓ What Feeds Into These Numbers</h4>
+                            <p style="margin-bottom: 10px; color: #a0aec0;">Each of these inputs shapes one of the three
+                                capacity dimensions we explore below:</p>
+                            <ul class="metric-list">
+                                <li>Covers per Labor Hour</li>
+                                <li>Total Labor Hours</li>
+                                <li>Average Food Sales per cover</li>
+                                <li>Seats</li>
+                                <li>Table Turn Time</li>
+                                <li>Service Window/period</li>
+                            </ul>
+                        </div>
+
+                        <details class="collapsible">
+                            <summary>Deep Dive: How the Capacity System Works</summary>
+                            <div class="collapsible-content">
+
+                                <!-- Protecting the Guest Experience in the Rush -->
+                                <div class="psychology-box">
+                                    <h4>Protecting the Guest Experience in the Rush</h4>
+
+                                    <!-- Peak Window Definition -->
+                                    <div
+                                        style="background: rgba(0,0,0,0.3); padding: 22px; border-radius: 12px; margin-bottom: 20px;">
+                                        <strong style="color:#ecc94b; font-size: 1.1em;">
+                                            Capacity is decided in the rush.
+                                        </strong>
+                                        <p style="color:#fff; margin-top:10px;">
+                                            Not across the whole night.
+                                            Not in the averages.
+                                            In the busiest 60 to 90 minutes.
+                                        </p>
+                                        <div class="equation-formula" style="margin-top: 12px;">
+                                            Peak Window (PW) = Our busiest continuous 60 to 90 minutes
+                                        </div>
+                                        <p style="color:#a0aec0; margin-top:10px;">
+                                            If we can protect the standard here, we can protect it anywhere.
+                                        </p>
+                                        <p style="color:#fff; margin-top:10px;">
+                                            So what determines Capacity? Three areas of the restaurant, each with its
+                                            own ceiling.
+                                        </p>
+                                    </div>
+
+                                    <!-- Three Areas, Three Ceilings -->
+                                    <div
+                                        style="background: rgba(0,0,0,0.3); padding: 22px; border-radius: 12px; margin-bottom: 20px;">
+                                        <strong style="color:#ecc94b; font-size: 1.1em;">
+                                            Three Areas, Three Ceilings
+                                        </strong>
+                                        <p style="color:#a0aec0; margin-top:10px;">
+                                            Each area of the restaurant has its own speed limit. The slowest one sets
+                                            our true capacity.
+                                        </p>
+
+                                        <div style="margin-top:18px;">
+                                            <!-- DIMENSION 1: FOH (Server-Driven) -->
+                                            <p style="color:#fff; margin-bottom:6px;">
+                                                <strong>1 FOH Capacity (Server Driven)</strong>
+                                            </p>
+                                            <p style="color:#a0aec0; margin-bottom:8px;">
+                                                Servers are the engine -- they create covers. Every other FOH role
+                                                exists to keep that engine running smoothly under pressure.
+                                            </p>
+                                            <p style="color:#a0aec0; margin-bottom:8px;">
+                                                <strong style="color:#fff;">Server CPLH</strong> -- covers per server
+                                                labor hour during the peak window.
+                                                Server Labor Hours = Servers x PW hours.
+                                                <span style="color:#ecc94b;">Typical range: 5 to 7 in casual
+                                                    dine-in.</span>
+                                            </p>
+                                            <div class="equation-formula">
+                                                Server Hours = PW (in hours) x Number of Servers
+                                            </div>
+                                            <div class="equation-formula" style="margin-top: 10px;">
+                                                FOH Capacity = Server CPLH x Server Hours
+                                            </div>
+
+                                            <div
+                                                style="background: rgba(72, 187, 120, 0.08); padding: 16px; border-radius: 10px; margin-top: 12px; border-left: 3px solid #48bb78;">
+                                                <strong style="color:#48bb78;">Quick Example:</strong>
+                                                <p style="color:#fff; margin-top:6px;">
+                                                    PW = 1.5 hours, 4 servers, Server CPLH = 6
+                                                </p>
+                                                <p style="color:#fff; margin-top:4px;">
+                                                    Server Hours = 1.5 x 4 = 6
+                                                </p>
+                                                <p style="color:#fff; margin-top:4px;">
+                                                    FOH Capacity = 6 x 6 = 36 covers
+                                                </p>
+                                            </div>
+
+                                            <!-- Server CPLH Support Ladder -->
+                                            <div
+                                                style="background: rgba(237, 137, 54, 0.08); padding: 16px; border-radius: 10px; margin-top: 16px; border-left: 3px solid #ed8936;">
+                                                <strong style="color:#ed8936;">Server CPLH Support Ladder</strong>
+                                                <p style="color:#a0aec0; margin-top:10px; font-size: 0.9em;">
+                                                    Support roles do not create covers. They protect server throughput
+                                                    so Server CPLH can stay high under load.
+                                                </p>
+                                                <p style="color:#fff; margin-top:8px;">
+                                                    No support baseline: about 4 Server CPLH
+                                                </p>
+                                                <p style="color:#fff; margin-top:4px;">
+                                                    Host and expo support: about 6 Server CPLH
+                                                </p>
+                                                <p style="color:#fff; margin-top:4px;">
+                                                    Strong execution with support: 5 to 7 depending on concept and menu
+                                                    complexity
+                                                </p>
+                                            </div>
+
+                                            <hr style="opacity:0.1; margin:20px 0;" />
+
+                                            <!-- DIMENSION 2: Room Capacity -->
+                                            <p style="color:#fff; margin-bottom:6px;">
+                                                <strong>2) Room Capacity</strong>
+                                            </p>
+                                            <p style="color:#a0aec0; margin-bottom:12px;">
+                                                How many guests the dining room can physically seat and turn during the
+                                                peak window. This one is usually the easiest to calculate -- it is pure
+                                                arithmetic.
+                                            </p>
+                                            <div class="equation-formula">
+                                                Room Capacity (covers) = Seats x (PW / Average Turn Time)
+                                            </div>
+                                            <p style="color:#a0aec0; margin-top:8px; font-size: 0.95em;">
+                                                PW and Average Turn Time must be in the same unit.
+                                            </p>
+
+                                            <hr style="opacity:0.1; margin:20px 0;" />
+
+                                            <!-- DIMENSION 3: Kitchen Capacity -->
+                                            <p style="color:#fff; margin-bottom:6px;">
+                                                <strong>3) Kitchen Capacity</strong>
+                                            </p>
+                                            <p style="color:#a0aec0; margin-bottom:12px;">
+                                                How many covers the kitchen can push out during the peak window. Since
+                                                we measure kitchen output in dollars (Kitchen SPLH), we need to convert
+                                                that to covers so all three dimensions speak the same language.
+                                            </p>
+                                            <div
+                                                style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-bottom: 12px;">
+                                                <p style="color:#a0aec0; margin: 0; font-size: 0.95em;">
+                                                    <strong style="color:#fff;">Kitchen SPLH</strong> -- Food Sales in
+                                                    PW divided by BOH Labor Hours in PW. Unit: dollars per BOH labor
+                                                    hour. <span style="color:#ecc94b;">Range: 150 to 250.</span>
+                                                </p>
+                                                <p style="color:#a0aec0; margin-top:8px; font-size: 0.95em;">
+                                                    <strong style="color:#fff;">Kitchen Food Per Cover</strong> -- Food
+                                                    Sales in PW divided by Covers in PW. Unit: dollars per cover.
+                                                </p>
+                                                <p style="color:#a0aec0; margin-top:8px; font-size: 0.95em;">
+                                                    <strong style="color:#fff;">Kitchen CPLH</strong> -- Kitchen SPLH
+                                                    divided by Kitchen Food Per Cover. Unit: covers per BOH labor hour.
+                                                    This converts dollars into a cover count we can compare against the
+                                                    other dimensions.
+                                                </p>
+                                            </div>
+                                            <div class="equation-formula">
+                                                Kitchen Food Per Cover = Food Sales in PW / Covers in PW
+                                            </div>
+                                            <div class="equation-formula" style="margin-top: 8px;">
+                                                Kitchen CPLH = Kitchen SPLH / Kitchen Food Per Cover
+                                            </div>
+                                            <div class="equation-formula" style="margin-top: 8px;">
+                                                Kitchen Labor Hours = PW (hours) x Kitchen Staff during PW
+                                            </div>
+                                            <div class="equation-formula" style="margin-top: 8px;">
+                                                Kitchen Capacity (covers) = Kitchen CPLH x Kitchen Labor Hours
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- True Guest Capacity -->
+                                    <div
+                                        style="background: rgba(0,0,0,0.3); padding: 22px; border-radius: 12px; margin-bottom: 20px;">
+                                        <strong style="color:#ecc94b; font-size: 1.1em;">
+                                            Our True Guest Capacity
+                                        </strong>
+                                        <p style="color:#fff; margin-top:10px;">
+                                            Now we have three ceilings. Which one actually governs our night?
+                                        </p>
+                                        <p style="color:#a0aec0; margin-top:8px;">
+                                            All values are expressed in covers. The lowest value sets the limit.
+                                        </p>
+                                        <div class="equation-formula" style="margin-top:12px;">
+                                            True Guest Capacity = MIN(Server Capacity, Room Capacity, Kitchen Capacity)
+                                        </div>
+                                        <p style="color:#a0aec0; margin-top:10px;">
+                                            Whichever area is tightest becomes our bottleneck. That is the number we
+                                            plan around.
+                                        </p>
+                                    </div>
+
+                                    <!-- Constraint Monitors (standalone, after TGC) -->
+                                    <div
+                                        style="background: rgba(237, 137, 54, 0.08); padding: 22px; border-radius: 12px; margin-bottom: 20px; border-left: 3px solid #ed8936;">
+                                        <strong style="color:#ed8936; font-size: 1.1em;">
+                                            Real-Time Signals: Constraint Monitors
+                                        </strong>
+                                        <p style="color:#a0aec0; margin-top:10px; margin-bottom:14px;">
+                                            The ceiling math tells us our limit on paper. These monitors tell us what is
+                                            actually happening on the floor, right now. They do not change the ceiling
+                                            -- they reveal which area is breaking first.
+                                        </p>
+                                        <p style="color:#fff; margin-bottom:14px;">
+                                            Think of them as dashboard warning lights. When one flashes, you know
+                                            exactly where to look.
+                                        </p>
+
+                                        <div
+                                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+                                            <!-- Host Constraint Monitor -->
+                                            <div
+                                                style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px;">
+                                                <strong style="color:#ed8936;">Host Constraint Monitor</strong>
+                                                <ul class="metric-list" style="margin-top: 8px;">
+                                                    <li>Metric: Average Turn Time (PW)</li>
+                                                    <li>Standard: your standard turn time</li>
+                                                    <li>Breach: Average Turn Time exceeds standard</li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Expo Constraint Monitor -->
+                                            <div
+                                                style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px;">
+                                                <strong style="color:#ed8936;">Expo Constraint Monitor</strong>
+                                                <ul class="metric-list" style="margin-top: 8px;">
+                                                    <li>Metric: Kitchen Chit Time (PW)</li>
+                                                    <li>Standard: your standard kitchen chit time</li>
+                                                    <li>Breach: Kitchen Chit Time exceeds standard</li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Bar Constraint Monitor -->
+                                            <div
+                                                style="background: rgba(0,0,0,0.3); padding: 14px; border-radius: 10px;">
+                                                <strong style="color:#ed8936;">Bar Constraint Monitor</strong>
+                                                <ul class="metric-list" style="margin-top: 8px;">
+                                                    <li>Metric: Bar Chit Time (PW)</li>
+                                                    <li>Standard: your standard bar chit time</li>
+                                                    <li>Breach: Bar Chit Time exceeds standard</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Capacity Load -->
+                                    <div
+                                        style="background: rgba(0,0,0,0.3); padding: 22px; border-radius: 12px; margin-bottom: 20px;">
+                                        <strong style="color:#ecc94b; font-size: 1.1em;">
+                                            The One Number We Watch
+                                        </strong>
+                                        <p style="color:#a0aec0; margin-top:10px;">
+                                            We now have a ceiling (True Guest Capacity). We know the demand (covers in
+                                            the peak window). One ratio puts them together:
+                                        </p>
+                                        <div class="equation-formula" style="margin-top:10px;">
+                                            Capacity Load = Covers in PW / True Guest Capacity
+                                        </div>
+                                        <p style="color:#fff; margin-top:12px;">
+                                            Above 1.0: demand exceeds ceiling. Check the Constraint Monitors to identify
+                                            which standard is breaching first.
+                                        </p>
+                                    </div>
+
+                                    <!-- Consolidated Example: Friday Night — Three Ways It Can Go -->
+                                    <div class="example-box" style="margin-top: 18px;">
+                                        <h4>📋 Friday Night: Three Ways It Can Go</h4>
+                                        <div
+                                            style="background: rgba(0, 0, 0, 0.4); padding: 22px; border-radius: 12px;">
+
+                                            <p style="margin: 0 0 16px 0; color: #a0aec0;">
+                                                Same restaurant. Same peak window. Three different outcomes based on
+                                                staffing and demand.
+                                            </p>
+
+                                            <!-- Fixed Values -->
+                                            <div
+                                                style="background: rgba(0,0,0,0.25); padding: 16px; border-radius: 10px; margin-bottom: 16px;">
+                                                <strong style="color:#48bb78;">Fixed Values:</strong>
+                                                <p style="color:#fff; margin-top:6px;">
+                                                    PW = 1.5 hours, Seats = 80, Average Turn Time = 1.5 hours
+                                                </p>
+                                                <p style="color:#fff; margin-top:4px;">
+                                                    Kitchen Staff during PW = 4, Kitchen SPLH = $200, Food Per Cover =
+                                                    $25
+                                                </p>
+                                            </div>
+
+                                            <!-- Scenario A: 5 Servers (Proper Staffing) -->
+                                            <div
+                                                style="background: rgba(72, 187, 120, 0.1); padding: 18px; border-radius: 12px; margin-bottom: 16px;">
+                                                <p style="margin: 0;"><strong style="color: #48bb78;">Scenario A: 5
+                                                        Servers (Proper Staffing)</strong></p>
+                                                <p style="margin: 8px 0 0 0; color: #a0aec0;">Demand = 40 covers</p>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 12px;">
+                                                    <strong style="color:#48bb78;">Server Capacity:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Server Hours = 1.5 x 5 = 7.5</p>
+                                                    <p style="margin: 4px 0 0 0;">Server Capacity = 6 x 7.5 = 45 covers
+                                                    </p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 8px;">
+                                                    <strong style="color:#48bb78;">Room Capacity:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Room Capacity = 80 x (1.5 / 1.5) = 80
+                                                        covers</p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 8px;">
+                                                    <strong style="color:#48bb78;">Kitchen Capacity:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Kitchen CPLH = 200 / 25 = 8 covers per
+                                                        labor hour</p>
+                                                    <p style="margin: 4px 0 0 0;">Kitchen Labor Hours = 1.5 x 4 = 6</p>
+                                                    <p style="margin: 4px 0 0 0;">Kitchen Capacity = 8 x 6 = 48 covers
+                                                    </p>
+                                                </div>
+
+                                                <div class="equation-formula" style="margin-top: 14px;">
+                                                    True Guest Capacity = MIN(45, 80, 48) = 45 (Server Bottleneck)
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 10px;">
+                                                    <p style="margin: 0;"><strong style="color: #48bb78;">Capacity Load
+                                                            = 40 / 45 = 0.89</strong></p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(72, 187, 120, 0.1); padding: 14px; border-radius: 10px; margin-top: 8px; border-left: 3px solid #48bb78;">
+                                                    <strong style="color: #48bb78;">Constraint Monitor Read:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Host: Average Turn Time vs standard →
+                                                        PASS</p>
+                                                    <p style="margin: 4px 0 0 0;">Expo: Kitchen Chit Time vs standard →
+                                                        PASS</p>
+                                                    <p style="margin: 4px 0 0 0;">Bar: Bar Chit Time vs standard → PASS
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Bridge to Scenario B -->
+                                            <p style="margin: 0 0 16px 0; color: #a0aec0; font-style: italic;">
+                                                Now imagine the manager sends one server home to save labor cost. Same
+                                                demand, one fewer server. Watch what happens to the ceiling.
+                                            </p>
+
+                                            <!-- Scenario B: Manager Cuts to 4 Servers -->
+                                            <div
+                                                style="background: rgba(245, 101, 101, 0.1); padding: 18px; border-radius: 12px; margin-bottom: 16px;">
+                                                <p style="margin: 0;"><strong style="color: #f56565;">Scenario B:
+                                                        Manager Cuts to 4 Servers</strong></p>
+                                                <p style="margin: 8px 0 0 0; color: #a0aec0;">Demand = 40 covers
+                                                    (unchanged)</p>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 12px;">
+                                                    <p style="margin: 0;">Server Hours = 1.5 x 4 = 6</p>
+                                                    <p style="margin: 4px 0 0 0;">Server Capacity = 6 x 6 = 36 covers
+                                                    </p>
+                                                    <p style="margin: 4px 0 0 0;">Room Capacity = 80 (unchanged)</p>
+                                                    <p style="margin: 4px 0 0 0;">Kitchen Capacity = 48 (unchanged)</p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 8px;">
+                                                    <p style="margin: 0;"><strong>True Guest Capacity = MIN(36, 80, 48)
+                                                            = 36</strong> (Server Bottleneck)</p>
+                                                    <p style="margin: 4px 0 0 0;"><strong
+                                                            style="color: #f56565;">Capacity Load = 40 / 36 =
+                                                            1.11</strong> (11% over ceiling)</p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(245, 101, 101, 0.1); padding: 14px; border-radius: 10px; margin-top: 8px; border-left: 3px solid #f56565;">
+                                                    <strong style="color: #f56565;">Constraint Monitor Read:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Host: Average Turn Time vs standard →
+                                                        BREACH</p>
+                                                    <p style="margin: 4px 0 0 0;">Expo: Kitchen Chit Time vs standard →
+                                                        BREACH</p>
+                                                    <p style="margin: 4px 0 0 0;">Bar: Bar Chit Time vs standard → PASS
+                                                    </p>
+                                                </div>
+
+                                                <p style="margin: 12px 0 0 0; color: #a0aec0;">
+                                                    Cutting one server dropped our ceiling from 45 to 36, flipping us
+                                                    from comfortable to overloaded. This is exactly the trap Labor %
+                                                    sets -- it says the cut looks great on paper.
+                                                </p>
+                                            </div>
+
+                                            <!-- Scenario C: What a Real Saturday Looks Like -->
+                                            <div
+                                                style="background: rgba(237, 137, 54, 0.1); padding: 18px; border-radius: 12px; margin-bottom: 16px; border-left: 3px solid #ed8936;">
+                                                <p style="margin: 0;"><strong style="color: #ed8936;">Scenario C: What a
+                                                        Real Saturday Looks Like</strong></p>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 12px;">
+                                                    <strong style="color: #ed8936;">Inputs:</strong>
+                                                    <p style="margin: 6px 0 0 0;">PW = 4 hours (240 minutes)</p>
+                                                    <p style="margin: 4px 0 0 0;">Covers in PW = 155</p>
+                                                    <p style="margin: 4px 0 0 0;">Food Sales in PW = $3,733.55</p>
+                                                    <p style="margin: 4px 0 0 0;">Average Turn Time = 50 minutes</p>
+                                                    <p style="margin: 4px 0 0 0;">Servers = 5, Kitchen Staff = 4, Seats
+                                                        = 80</p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 8px;">
+                                                    <strong style="color: #ed8936;">Server Capacity:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Server Labor Hours = 4 x 5 = 20</p>
+                                                    <p style="margin: 4px 0 0 0;">Required Server CPLH for this PW = 155
+                                                        / 20 = 7.75 (slightly above typical 5 to 7 range) Take 7 to be
+                                                        true CPLH because it is the closest integer value to 7.75 we had
+                                                        an expo and host on</p>
+                                                    <p style="margin: 4px 0 0 0;">Server Capacity = 140 covers</p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 8px;">
+                                                    <strong style="color: #ed8936;">Room Capacity:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Room turns = 240 / 50 = 4.8</p>
+                                                    <p style="margin: 4px 0 0 0;">Room Capacity = 80 x 4.8 = 384 covers
+                                                    </p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 8px;">
+                                                    <strong style="color: #ed8936;">Kitchen Capacity:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Kitchen Labor Hours = 4 x 4 = 16</p>
+                                                    <p style="margin: 4px 0 0 0;">Kitchen SPLH standard = 200</p>
+                                                    <p style="margin: 4px 0 0 0;">Food Per Cover = 3,733.55 / 155 =
+                                                        24.09</p>
+                                                    <p style="margin: 4px 0 0 0;">Kitchen CPLH standard = 200 / 24.09 =
+                                                        8.30</p>
+                                                    <p style="margin: 4px 0 0 0;">Kitchen Capacity at standard = 8.30 x
+                                                        16 = 133 covers</p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0,0,0,0.25); padding: 14px; border-radius: 10px; margin-top: 8px;">
+                                                    <p style="margin: 0;"><strong>True Guest Capacity = MIN(140, 384,
+                                                            133) = 133</strong></p>
+                                                    <p style="margin: 4px 0 0 0;"><strong
+                                                            style="color: #ed8936;">Capacity Load = 155 / 133 =
+                                                            1.17</strong></p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(237, 137, 54, 0.1); padding: 14px; border-radius: 10px; margin-top: 8px; border-left: 3px solid #ed8936;">
+                                                    <strong style="color: #ed8936;">Constraint Monitor Read:</strong>
+                                                    <p style="margin: 6px 0 0 0;">Host: Average Turn Time vs standard →
+                                                        BREACH</p>
+                                                    <p style="margin: 4px 0 0 0;">Expo: Kitchen Chit Time vs standard →
+                                                        BREACH</p>
+                                                    <p style="margin: 4px 0 0 0;">Bar: Bar Chit Time vs standard → PASS
+                                                    </p>
+                                                </div>
+
+                                                <p style="margin: 12px 0 0 0; color: #ed8936; font-weight: bold;">
+                                                    Note: Load at 1.00 means zero buffer even at required throughput. At
+                                                    standard throughput, load is 1.17, so breach is expected. Any surge
+                                                    amplifies it.
+                                                </p>
+                                            </div>
+
+                                            <!-- Micro Surge Reality -->
+                                            <div
+                                                style="background: rgba(237, 137, 54, 0.08); padding: 18px; border-radius: 12px; margin-bottom: 16px; border-left: 3px solid #ed8936;">
+                                                <strong style="color: #ed8936;">Micro Surge Reality</strong>
+                                                <p style="margin: 10px 0 0 0;">Capacity Load is calculated across the
+                                                    full PW. Service does not arrive evenly.</p>
+                                                <p style="margin: 6px 0 0 0;">Demand arrives in bursts across 5 to 15
+                                                    minute windows.</p>
+                                                <p style="margin: 6px 0 0 0;">Average cover rate = 155 / 240 = 0.65
+                                                    covers per minute.</p>
+                                                <p style="margin: 6px 0 0 0;">If 20 covers land in 10 minutes,
+                                                    instantaneous rate = 2.0 covers per minute. That is about 3x the
+                                                    average rate.</p>
+                                                <p style="margin: 6px 0 0 0;">When instantaneous demand exceeds
+                                                    sustainable throughput, kitchen chit time rises and breaches
+                                                    standard even when PW load reads 1.00 against required throughput.
+                                                </p>
+                                                <p style="margin: 10px 0 0 0; color: #ed8936;">This is why Constraint
+                                                    Monitors matter. They reveal breach during bursts when the ceiling
+                                                    math still reads 1.00.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- High vs Low Capacity Load -->
+                                    <div class="sweet-spot-box" style="margin-top: 18px;">
+                                        <h4>🔴 High Capacity Load vs Low Capacity Load</h4>
+
+                                        <div class="killers-grid">
+                                            <div class="killer-box">
+                                                <h5>High Capacity Load (&gt; 0.95)</h5>
+                                                <p style="margin-bottom: 12px; color: #f56565; font-style: italic;">
+                                                    Operating at
+                                                    or beyond True Guest Capacity</p>
+
+                                                <div class="killer-section">
+                                                    <strong>What it looks like on paper:</strong>
+                                                    <ul class="metric-list">
+                                                        <li>Covers/LH ↑</li>
+                                                        <li>Labor % ↓</li>
+                                                        <li>Table turns faster</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="killer-section">
+                                                    <strong>What it feels like on the floor:</strong>
+                                                    <ul class="metric-list">
+                                                        <li>Servers stop suggesting</li>
+                                                        <li>Guests stop asking</li>
+                                                        <li>Drinks don’t get refilled</li>
+                                                        <li>Decisions get rushed</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="killer-section">
+                                                    <strong>What actually breaks:</strong>
+                                                    <ul class="metric-list">
+                                                        <li>Avg check</li>
+                                                        <li>Beverage attach</li>
+                                                        <li>Dessert rate</li>
+                                                        <li>Return visits</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(245, 101, 101, 0.15); padding: 14px; border-radius: 10px; margin-top: 12px;">
+                                                    <strong style="color: #f56565;">Why it’s deceptive:</strong>
+                                                    <p style="margin: 8px 0 0 0;">
+                                                        Revenue often holds temporarily because volume masks decay. This
+                                                        is why
+                                                        restaurants feel "busy but broke."
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="killer-box">
+                                                <h5>Low Capacity Load (&lt; 0.70)</h5>
+                                                <p style="margin-bottom: 12px; color: #ecc94b; font-style: italic;">
+                                                    Operating
+                                                    well below True Guest Capacity</p>
+
+                                                <div class="killer-section">
+                                                    <strong>What it looks like on paper:</strong>
+                                                    <ul class="metric-list">
+                                                        <li>Covers/LH ↓</li>
+                                                        <li>Labor % ↑</li>
+                                                        <li>Low throughput</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="killer-section">
+                                                    <strong>What actually breaks:</strong>
+                                                    <ul class="metric-list">
+                                                        <li>Underutilized labor</li>
+                                                        <li>Idle fixed costs</li>
+                                                        <li>Weak contribution margin</li>
+                                                        <li>Excess managerial energy with no throughput</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(236, 201, 75, 0.15); padding: 14px; border-radius: 10px; margin-top: 12px;">
+                                                    <strong style="color: #ecc94b;">The Problem:</strong>
+                                                    <p style="margin: 8px 0 0 0;">
+                                                        You’re paying for capacity you’re not using. Fixed costs get
+                                                        spread over
+                                                        fewer guests, killing unit economics.
+                                                    </p>
+                                                </div>
+
+                                                <div
+                                                    style="background: rgba(0, 0, 0, 0.3); padding: 14px; border-radius: 10px; margin-top: 12px;">
+                                                    <strong>Note:</strong>
+                                                    <p style="margin: 8px 0 0 0;">
+                                                        Low Capacity Load also creates behavioral problems (dead room,
+                                                        no
+                                                        energy). See <strong>BEHAVIOR</strong> section for how this
+                                                        affects
+                                                        spending psychology.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Where We Want to Land: The Optimal Zone -->
+                                    <div class="sweet-spot-box" style="margin-top: 18px;">
+                                        <h4>🎯 Where We Want to Land: The Optimal Zone</h4>
+
+                                        <div
+                                            style="background: rgba(72, 187, 120, 0.15); padding: 22px; border-radius: 12px; margin-bottom: 18px; border: 3px solid #48bb78; text-align: center;">
+                                            <p
+                                                style="font-size: 1.25em; font-weight: 700; color: #48bb78; margin: 0 0 8px 0;">
+                                                Optimal Capacity Load Range: 0.75 to 0.90
+                                            </p>
+                                            <p style="font-size: 1.02em; color: #a0aec0; margin: 0;">
+                                                Operating at 75-90% of True Guest Capacity
+                                            </p>
+                                        </div>
+
+                                        <p style="margin-bottom: 14px; font-size: 1.05em;">In this zone:</p>
+
+                                        <div class="sweet-spot-criteria">
+                                            <div class="criteria-item">
+                                                <h5>True Guest Capacity isn’t maxed out</h5>
+                                            </div>
+                                            <div class="criteria-item">
+                                                <h5>Capacity Load leaves room for variability</h5>
+                                            </div>
+                                            <div class="criteria-item">
+                                                <h5>Experience standards are preserved</h5>
+                                            </div>
+                                            <div class="criteria-item">
+                                                <h5>Staff energy remains stable</h5>
+                                            </div>
+                                            <div class="criteria-item">
+                                                <h5>Contribution margin improves</h5>
+                                            </div>
+                                            <div class="criteria-item">
+                                                <h5>Operational consistency is maintained</h5>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            style="background: rgba(72, 187, 120, 0.1); padding: 20px; border-radius: 12px; margin-top: 16px; border-left: 4px solid #48bb78;">
+                                            <strong
+                                                style="display: block; margin-bottom: 12px; color: #48bb78; font-size: 1.05em;">This
+                                                is where:</strong>
+                                            <ul class="metric-list">
+                                                <li>Guests feel seen</li>
+                                                <li>Servers can guide decisions</li>
+                                                <li>The room has energy calibrated to intended behavior</li>
+                                            </ul>
+                                        </div>
+
+                                        <div
+                                            style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 12px; margin-top: 14px;">
+                                            <strong
+                                                style="display: block; margin-bottom: 12px; color: #667eea; font-size: 1.05em;">Energy
+                                                Calibration:</strong>
+                                            <p style="margin-bottom: 12px; font-style: italic; color: #a0aec0;">
+                                                See <strong>BEHAVIOR</strong> section for detailed explanation of energy
+                                                alignment and psychological drivers.
+                                            </p>
+                                            <ul class="metric-list">
+                                                <li><strong>For turnover models:</strong> Social, upbeat, momentum
+                                                    toward next
+                                                    round</li>
+                                                <li><strong>For dwell models:</strong> Intimate, relaxed, momentum
+                                                    toward
+                                                    lingering</li>
+                                                <li><strong>Energy mismatches:</strong> Clubbers among diners → diners
+                                                    leave
+                                                    early</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- The Principle Behind All of This -->
+                                    <div class="insight-box" style="margin-top: 18px;">
+                                        <h4>🔑 The Principle Behind All of This</h4>
+                                        <p style="font-size: 1.1em; margin-bottom: 12px;"><strong>True Guest Capacity
+                                                defines
+                                                your ceiling.</strong></p>
+                                        <p style="font-size: 1.1em; margin-bottom: 12px;"><strong>Capacity Load reveals
+                                                whether
+                                                you’re operating within it.</strong></p>
+
+                                        <div
+                                            style="background: rgba(102, 126, 234, 0.1); padding: 18px; border-radius: 12px; margin-top: 16px;">
+                                            <p style="margin: 0;">The goal is NOT more labor or less labor.</p>
+                                            <p style="margin: 10px 0 0 0; font-size: 1.05em;"><strong>The goal is: Keep
+                                                    Capacity
+                                                    Load in the optimal zone.</strong></p>
+                                        </div>
+                                        <p style="margin-top: 12px; color: #a0aec0;">
+                                            So if the goal is not to chase Labor %, what is Labor % actually telling us?
+                                        </p>
+                                    </div>
+
+                                    <!-- Why Chasing Labor % Can Hurt You -->
+                                    <div class="content-box" style="margin-top: 18px;">
+                                        <h5>❌ Why Chasing Labor % Can Hurt You</h5>
+                                        <p style="margin-bottom: 10px;">Here is the trap: Labor % improves when you do
+                                            these three things --</p>
+                                        <ul class="action-list">
+                                            <li>You cut attention</li>
+                                            <li>You remove slack</li>
+                                            <li>You reduce optionality</li>
+                                        </ul>
+
+                                        <p
+                                            style="margin-top: 12px; padding: 14px; background: rgba(0, 0, 0, 0.3); border-radius: 10px; font-size: 0.95em;">
+                                            <strong style="color: #f56565;">All three REDUCE True Guest Capacity or
+                                                INCREASE
+                                                Capacity Load beyond optimal.</strong>
+                                        </p>
+                                        <p
+                                            style="margin-top: 10px; padding: 14px; background: rgba(245, 101, 101, 0.15); border-radius: 10px; text-align: center;">
+                                            <strong style="color: #f56565;">Labor % ignores whether Capacity Load is
+                                                sustainable.</strong>
+                                        </p>
+                                        <p style="margin-top: 12px; color: #a0aec0;">
+                                            Instead of cutting to improve a percentage, here is how to actually raise
+                                            the ceiling.
+                                        </p>
+                                    </div>
+
+                                    <!-- How to Raise Your Ceiling (Without Burning Your Team) -->
+                                    <div class="insight-box" style="margin-top: 18px;">
+                                        <h5>✓ How to Raise Your Ceiling (Without Burning Your Team)</h5>
+                                        <p style="margin-bottom: 12px; font-style: italic; color: #a0aec0;">
+                                            These structural changes increase your ceiling without degrading experience:
+                                        </p>
+                                        <ul class="action-list">
+                                            <li>Section Geometry: Give each server fewer tables during the rush so they
+                                                can give each guest more attention = higher covers per labor hour
+                                            </li>
+                                            <li>Temporal Staggering: Overlap server shifts so you peak with more hands,
+                                                not the same hands stretched thinner = better load distribution</li>
+                                            <li>Door Control: Use reservation pacing so demand arrives at a rate your
+                                                team can actually handle = predictable capacity load</li>
+                                            <li>Role Specialization: Let each person do one thing well instead of asking
+                                                everyone to do everything = higher throughput per server</li>
+                                        </ul>
+                                        <p
+                                            style="margin-top: 12px; padding: 14px; background: rgba(72, 187, 120, 0.1); border-radius: 10px;">
+                                            <strong>Each increases True Guest Capacity while keeping Capacity Load
+                                                manageable.</strong>
+                                        </p>
+                                    </div>
+
+                                    <!-- How to Tell If You Are in the Zone (Without the Formula) -->
+                                    <div class="content-box" style="margin-top: 18px;">
+                                        <h4>📊 How to Tell If You Are in the Zone (Without the Formula)</h4>
+                                        <p style="margin-bottom: 12px;">
+                                            If you cannot calculate Capacity Load directly, these three guest-facing
+                                            signals will tell you whether your team has room to breathe:
+                                        </p>
+                                        <ul class="metric-list">
+                                            <li><strong>Average Check</strong>: Drops when guests feel rushed</li>
+                                            <li><strong>Beverage Attach Rate</strong>: Drops when servers lack attention
+                                            </li>
+                                            <li><strong>Dessert Rate</strong>: Drops when turns are forced</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div><!-- /collapsible-content -->
+                        </details>
+
+                    </div><!-- /node-content -->
+                </div><!-- /node-card -->
+            </div><!-- /flow-node node-2 -->
+

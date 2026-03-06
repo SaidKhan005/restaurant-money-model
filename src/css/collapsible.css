@@ -1,0 +1,56 @@
+/* ====== COLLAPSIBLE SECTIONS ====== */
+details.collapsible {
+    margin-top: 20px;
+    grid-column: 1 / -1;
+}
+
+details.collapsible>summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 25px;
+    background: rgba(102, 126, 234, 0.08);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.15em;
+    color: #a0aec0;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+details.collapsible>summary::-webkit-details-marker {
+    display: none;
+}
+
+details.collapsible>summary::before {
+    content: "▸";
+    font-size: 1.2em;
+    color: #667eea;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+}
+
+details.collapsible[open]>summary::before {
+    transform: rotate(90deg);
+}
+
+details.collapsible>summary:hover {
+    background: rgba(102, 126, 234, 0.15);
+    color: #fff;
+    border-color: rgba(102, 126, 234, 0.4);
+}
+
+details.collapsible[open]>summary {
+    background: rgba(102, 126, 234, 0.12);
+    color: #fff;
+    border-color: rgba(102, 126, 234, 0.3);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 0;
+}
+
+details.collapsible>.collapsible-content {
+    padding: 5px 0 0 0;
+}
+

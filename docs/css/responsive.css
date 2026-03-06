@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+    .value-levers {
+        grid-template-columns: 1fr;
+    }
+
+    .killers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .node-content {
+        grid-template-columns: 1fr;
+    }
+
+    .actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-title {
+        font-size: 2.5em;
+    }
+
+    .node-title {
+        font-size: 2em;
+    }
+
+    .node-header {
+        grid-template-columns: 1fr;
+    }
+
+    .killer-grid,
+    .psych-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sticky-nav {
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 10px 15px;
+    }
+
+    .sticky-nav a {
+        font-size: 0.75em;
+        padding: 6px 10px;
+    }
+}

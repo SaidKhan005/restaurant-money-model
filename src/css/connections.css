@@ -1,0 +1,52 @@
+/* Connection Arrow */
+.connection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.arrow {
+    width: 5px;
+    height: 70px;
+    background: linear-gradient(180deg, rgba(102, 126, 234, 0.8) 0%, rgba(102, 126, 234, 0.3) 100%);
+    position: relative;
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 18px solid rgba(102, 126, 234, 0.8);
+}
+
+.connection-label {
+    background: rgba(102, 126, 234, 0.25);
+    border: 3px solid #667eea;
+    padding: 18px 35px;
+    border-radius: 30px;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 700px;
+}
+
+.connection-explanation {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 18px;
+    max-width: 900px;
+    text-align: center;
+    color: #a0aec0;
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    line-height: 1.7;
+}

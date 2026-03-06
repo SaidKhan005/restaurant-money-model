@@ -1,0 +1,129 @@
+/* Flow Chart */
+.flow-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+/* Flow Node */
+.flow-node {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Main Card */
+.node-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    padding: 40px;
+    border-left: 8px solid;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.node-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(10px);
+}
+
+.node-1 .node-card {
+    border-color: #f56565;
+}
+
+.node-2 .node-card {
+    border-color: #ed8936;
+}
+
+.node-3 .node-card {
+    border-color: #9f7aea;
+}
+
+.node-4 .node-card {
+    border-color: #48bb78;
+}
+
+.node-5 .node-card {
+    border-color: #4299e1;
+}
+
+.node-6 .node-card {
+    border-color: #ecc94b;
+}
+
+.node-7 .node-card {
+    border-color: #e53e3e;
+}
+
+/* Node Header */
+.node-header {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.node-number {
+    background: rgba(255, 255, 255, 0.15);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+.node-title-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.node-title {
+    font-size: 2.8em;
+    font-weight: 800;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.node-subtitle {
+    font-size: 1.3em;
+    color: #a0aec0;
+    font-style: italic;
+}
+
+/* Core Question Box */
+.core-question {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    border: 3px solid #667eea;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.core-question h4 {
+    color: #667eea;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.core-question p {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.problem-type {
+    margin-top: 15px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #a0aec0;
+}
