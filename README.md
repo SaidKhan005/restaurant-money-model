@@ -1,6 +1,6 @@
 # The Restaurant Money Model
 
-A complete visual system mapping how restaurants generate profit — from demand attraction through capacity, experience, behavior, and economics to the final outcome.
+A complete visual system mapping how restaurants generate profit - from demand attraction through capacity, experience, behavior, and economics to the final outcome.
 
 Built as a static site with a modular source structure and a Node.js build pipeline.
 
@@ -47,12 +47,20 @@ Restaurant money model/
 │   │   ├── flow-chart-close.html
 │   │   ├── closing-sections.html   # Hidden loop + Operator's Commandment
 │   │   └── footer.html
-│   └── build.js              # Build script
-├── docs/                     # Built output (served by GitHub Pages)
-│   ├── index.html            # Assembled from all partials
-│   └── css/                  # Copied from src/css/
-├── index.html                # Original monolithic file (kept for reference)
-├── extract.js                # One-time script used to split the original file
+│   ├── diagnostic/           # Profit Diagnostic tool (separate build)
+│   │   ├── partials/         # 9 HTML partials
+│   │   ├── css/              # 8 CSS files
+│   │   ├── js/               # diagnostic.js (quiz logic + scoring)
+│   │   ├── assets/           # favicon
+│   │   └── build.js          # Diagnostic build script
+│   └── build.js              # Main site build script
+├── docs/                     # Main site output (GitHub Pages)
+│   ├── index.html
+│   └── css/
+├── docs-diagnostic/          # Diagnostic tool output
+│   ├── index.html
+│   ├── css/
+│   └── js/
 ├── package.json
 └── .gitignore
 ```
@@ -66,41 +74,44 @@ Restaurant money model/
 ### Build
 
 ```bash
+# Build main site
 npm run build
-```
 
-This assembles all HTML partials into `docs/index.html` and copies the CSS files to `docs/css/`.
+# Build diagnostic tool
+node src/diagnostic/build.js
+```
 
 ### Preview Locally
 
-Open `docs/index.html` directly in a browser, or serve it:
+Open `docs/index.html` or `docs-diagnostic/index.html` in a browser, or serve them:
 
 ```bash
 npx serve docs
+npx serve docs-diagnostic
 ```
 
 ## Making Changes
 
-1. **Edit content** — Modify the relevant HTML partial in `src/partials/`
-2. **Edit styles** — Modify the relevant CSS file in `src/css/`
-3. **Rebuild** — Run `npm run build`
-4. **Deploy** — Commit and push; GitHub Pages auto-deploys from `docs/`
+1. **Edit content** - Modify the relevant HTML partial in `src/partials/` or `src/diagnostic/partials/`
+2. **Edit styles** - Modify the relevant CSS file in `src/css/` or `src/diagnostic/css/`
+3. **Rebuild** - Run the appropriate build command
+4. **Deploy** - Commit and push; GitHub Pages auto-deploys from `docs/`
 
-### CSS Load Order
+### CSS Load Order (Main Site)
 
-The CSS files must load in a specific order to maintain correct styling. The order is defined in `src/partials/head.html` and must not be changed without understanding the cascade dependencies:
+The CSS files must load in a specific order. The order is defined in `src/partials/head.html`:
 
-1. `base.css` — Foundation styles
-2. `layout.css` — Page structure
-3. `flow-chart.css` — Node layout
-4. `components.css` — Reusable elements
-5. `connections.css` — Arrow connectors
-6. `closing.css` — Final sections
-7. `navigation.css` — Overrides `body { padding-top }` from base
-8. `collapsible.css` — Accordion sections
-9. `back-to-top.css` — Overrides `connection` padding and adds `scroll-margin-top`
-10. `responsive.css` — **Must always load last** (media query overrides)
+1. `base.css` - Foundation styles
+2. `layout.css` - Page structure
+3. `flow-chart.css` - Node layout
+4. `components.css` - Reusable elements
+5. `connections.css` - Arrow connectors
+6. `closing.css` - Final sections
+7. `navigation.css` - Overrides `body { padding-top }` from base
+8. `collapsible.css` - Accordion sections
+9. `back-to-top.css` - Overrides `connection` padding and adds `scroll-margin-top`
+10. `responsive.css` - **Must always load last** (media query overrides)
 
 ## Hosting
 
-The site is hosted on GitHub Pages, serving from the `docs/` folder on the `master` branch. Any push to `master` that changes `docs/` will trigger a redeploy automatically.
+The site is hosted on GitHub Pages, serving from the `docs/` folder on the `master` branch.

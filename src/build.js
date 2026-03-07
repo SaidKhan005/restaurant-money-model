@@ -1,5 +1,5 @@
 /**
- * build.js — Assembles HTML partials + copies CSS into docs/
+ * build.js  - Assembles HTML partials + copies CSS into docs/
  * Run with: npm run build  (or: node src/build.js)
  */
 const fs = require('fs');
@@ -11,7 +11,7 @@ const CSS_SRC = path.join(__dirname, 'css');
 const DOCS = path.join(ROOT, 'docs');
 const CSS_DEST = path.join(DOCS, 'css');
 
-// Assembly order — matches the original index.html structure
+// Assembly order  - matches the original index.html structure
 const partialOrder = [
     'head.html',
     'body-open.html',

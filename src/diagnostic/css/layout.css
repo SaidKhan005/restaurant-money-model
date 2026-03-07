@@ -1,0 +1,30 @@
+/* === Layout === */
+.hero,
+.how-it-works,
+.quiz-section,
+.results-section,
+.faq-section {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.hero {
+    padding-top: 6rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0.5rem auto 2rem;
+    font-size: 1.05rem;
+}
+
+.sequence-note {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+}
