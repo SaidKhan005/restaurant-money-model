@@ -8,8 +8,10 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const PARTIALS = path.join(__dirname, 'partials');
 const CSS_SRC = path.join(__dirname, 'css');
+const IMG_SRC = path.join(__dirname, 'images');
 const DOCS = path.join(ROOT, 'docs');
 const CSS_DEST = path.join(DOCS, 'css');
+const IMG_DEST = path.join(DOCS, 'images');
 
 // Assembly order  - matches the original index.html structure
 const partialOrder = [
@@ -63,5 +65,17 @@ cssFiles.forEach(name => {
     fs.copyFileSync(path.join(CSS_SRC, name), path.join(CSS_DEST, name));
     console.log(`  Copied: docs/css/${name}`);
 });
+
+// ============================================================
+// 4. Copy images → docs/images/ (if src/images/ exists)
+// ============================================================
+if (fs.existsSync(IMG_SRC)) {
+    fs.mkdirSync(IMG_DEST, { recursive: true });
+    const imgFiles = fs.readdirSync(IMG_SRC).filter(f => /\.(jpg|jpeg|png|gif|svg|webp)$/i.test(f));
+    imgFiles.forEach(name => {
+        fs.copyFileSync(path.join(IMG_SRC, name), path.join(IMG_DEST, name));
+        console.log(`  Copied: docs/images/${name}`);
+    });
+}
 
 console.log(`\n✅ Build complete! Serve docs/ to preview.`);

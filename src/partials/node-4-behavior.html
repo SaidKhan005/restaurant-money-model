@@ -1,667 +1,285 @@
-            <!-- Node 4: BEHAVIOR -->
-            <div class="flow-node node-4" id="behavior">
-                <div class="node-card">
-                    <div class="node-header">
-                        <div class="node-number">4</div>
-                        <div class="node-title-section">
-                            <h2 class="node-title">BEHAVIOR</h2>
-                            <p class="node-subtitle">Framing & Psychology Engine</p>
-                        </div>
-                    </div>
+<!-- Node 4: BEHAVIOR -->
+<div class="flow-node node-4" id="behavior">
+<div class="node-card"><!-- HEADER -->
+<div class="node-header">
+<div class="node-number">4</div>
+<div class="node-title-section">
+  <h2 class="node-title">BEHAVIOR</h2>
+  <p class="node-subtitle">Guest Decision Behavior</p>
+</div>
+</div>
 
-                    <div class="core-question">
-                        <h4>Core Question</h4>
-                        <p>"Are guests being guided to higher-value decisions?"</p>
-                        <div class="problem-type">Problem Being Solved: Sales execution through framing</div>
-                    </div>
+<!-- CORE QUESTION -->
+<div class="core-question">
+<h4>Core Question</h4>
+<p>"Are guests being guided toward decisions that increase average spend?"</p>
+<div class="problem-type">Problem Being Solved: Turning a good visit into higher average spend</div>
+</div>
 
-                    <div class="node-content">
-                        <div class="content-box">
-                            <h4>📊 What You Measure</h4>
-                            <ul class="metric-list">
-                                <li>Avg Guest Check</li>
-                                <li>Items per Guest</li>
-                                <li>Dessert Rate</li>
-                                <li>Beverage Attach Rate</li>
-                            </ul>
-                            <p style="margin-top: 15px; font-style: italic; color: #a0aec0;">
-                                <strong>Slice by:</strong> Server (reveals framing effectiveness) • Daypart
-                                (reveals energy
-                                alignment) • Capacity Load (reveals psychological conditions)
-                            </p>
-                            <p style="margin-top: 10px; font-style: italic; color: #a0aec0;">
-                                <strong>Note:</strong> These measure psychological response and spending
-                                conversion.
-                            </p>
-                        </div>
+<!-- NODE CONTENT -->
+<div class="node-content">
 
-                        <div class="content-box">
-                            <h4>💡 The Core Insight</h4>
-                            <p style="font-size: 1.2em; margin-bottom: 15px;"><strong>Same menu. Same prices.
-                                    Different
-                                    outcome.</strong></p>
-                            <p>That means <strong>framing</strong>, not economics.</p>
-                            <div
-                                style="background: rgba(72, 187, 120, 0.1); padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid #48bb78;">
-                                <strong>People do not resist price. They resist unexplained price.</strong>
-                            </div>
-                        </div>
+<!-- 1. WHAT BEHAVIOR OWNS -->
+<div class="content-box">
+  <h4>&#x1F4AC; What Behavior Owns</h4>
+  <p>Behavior is the part of the model that increases average spend once the restaurant operations are already working.</p>
+  <p style="margin-top:10px;">It does that by reducing hesitation and guiding the next buying decision well.</p>
+</div>
 
-                        <details class="collapsible">
-                            <summary>Deep Dive: Psychology, Framing & Monetization</summary>
-                            <div class="collapsible-content">
+<!-- 2. WHERE THIS NODE FITS IN THE MODEL -->
+<div class="content-box">
+  <h4>&#x1F517; Where This Node Fits in the Model</h4>
+  <div class="model-bridge">
+    <div class="bridge-step">CAPACITY<span class="bs-sub">Creates the conditions</span></div>
+    <div class="bridge-step">EXPERIENCE<span class="bs-sub">Delivers the standard</span></div>
+    <div class="bridge-step active">BEHAVIOR<span class="bs-sub">Increases average spend</span></div>
+  </div>
+  <p style="font-size:0.9em; color:#a0aec0; margin-top:12px;">Capacity gives the team enough room to work. Experience makes the standard real for the guest. Behavior builds on that by guiding buying decisions in a way that increases average spend. Behavior does not create value from nothing. It helps the guest say yes to value that already feels credible.</p>
 
-                                <!-- How Capacity Load Affects Behavior -->
-                                <div class="psychology-box">
-                                    <h4>⚡ How Capacity Load Affects Behavior</h4>
-                                    <p style="margin-bottom: 20px;">Capacity load determines whether the room can create
-                                        the
-                                        psychological conditions for spending behavior:</p>
+  <div class="unit-row">
+    <span class="unit-tag">CAPACITY asks if the operation can support the visit</span>
+    <span class="unit-tag">EXPERIENCE asks if the guest felt the standard</span>
+    <span class="unit-tag active">BEHAVIOR asks if the guest was guided toward higher spend</span>
+  </div>
+</div>
 
-                                    <div style="display: grid; gap: 20px;">
-                                        <div
-                                            style="background: rgba(245, 101, 101, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #f56565;">
-                                            <strong style="color: #f56565; font-size: 1.1em;">When Capacity Load Is Too
-                                                HIGH (>
-                                                0.95)</strong>
-                                            <ul class="metric-list" style="margin-top: 12px;">
-                                                <li>Servers lack attention → Can't frame or guide decisions</li>
-                                                <li>Rushed service → Guests self-limit spending</li>
-                                                <li>No time for recommendations → Upsells don't happen</li>
-                                                <li>Friction increases → Behavioral resistance rises</li>
-                                            </ul>
-                                            <div
-                                                style="background: rgba(0, 0, 0, 0.3); padding: 15px; border-radius: 8px; margin-top: 15px;">
-                                                <strong>Behavioral Impact:</strong> Avg check drops, attach rates fall,
-                                                guests pay and
-                                                leave. Same experience delivered, different behavioral response.
-                                            </div>
-                                        </div>
+<!-- 4. DIAGNOSTIC LOGIC -->
+<div class="diagnostic-block">
+  <h4>&#x1F50D; If Average Spend Is Soft — Check in This Order</h4>
+  <div class="diagnostic-steps">
+    <div class="diag-step">
+      <span class="diag-num">01</span>
+      <p>Check <strong>CAPACITY</strong> — if the room is overloaded, the team can only fulfill, not guide.</p>
+    </div>
+    <div class="diag-step">
+      <span class="diag-num">02</span>
+      <p>Check <strong>EXPERIENCE</strong> — if the standard did not come through, guests are less open to saying yes to more.</p>
+    </div>
+    <div class="diag-step last">
+      <span class="diag-num">03</span>
+      <p>Check <strong>BEHAVIOR</strong> — if the visit was working, soft spend usually means hesitation was not reduced or the next decision was not guided well.</p>
+    </div>
+  </div>
+</div>
 
-                                        <div
-                                            style="background: rgba(236, 201, 75, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #ecc94b;">
-                                            <strong style="color: #ecc94b; font-size: 1.1em;">When Capacity Load Is Too
-                                                LOW (< 0.70)</strong>
-                                                    <ul class="metric-list" style="margin-top: 12px;">
-                                                        <li><strong>Energy Alignment Breaks:</strong> Room feels dead,
-                                                            no momentum
-                                                            toward intended behavior (turnover models lose upbeat
-                                                            energy, dwell models
-                                                            feel empty)</li>
-                                                        <li><strong>Social Reinforcement Breaks:</strong> Guests don't
-                                                            see behavioral
-                                                            cues from other tables (no one ordering drinks, no one
-                                                            lingering)</li>
-                                                        <li><strong>Behavioral Momentum Breaks:</strong> No natural flow
-                                                            pushing guests
-                                                            toward the intended spending patterns</li>
-                                                        <li><strong>Psychological Status Drops:</strong> "Did I pick the
-                                                            wrong place?"
-                                                            feeling emerges, spending hesitation increases</li>
-                                                    </ul>
-                                                    <div
-                                                        style="background: rgba(0, 0, 0, 0.3); padding: 15px; border-radius: 8px; margin-top: 15px;">
-                                                        <strong>Key Truth:</strong> A half-empty room lacks the social
-                                                        proof and energy
-                                                        direction that drives intended behavior. Guests consume more and
-                                                        stay longer in
-                                                        rooms with the right energetic alignment.
-                                                    </div>
-                                                    <div
-                                                        style="background: rgba(236, 201, 75, 0.15); padding: 15px; border-radius: 8px; margin-top: 15px;">
-                                                        <strong>Behavioral Impact:</strong> Lower spend per guest,
-                                                        faster exits, reduced
-                                                        repeat likelihood. The experience was delivered fine, but
-                                                        behavioral psychology
-                                                        broke.
-                                                    </div>
-                                        </div>
+<!-- 5. WHAT YOU MEASURE — moved after diagnostic -->
+<div class="content-box">
+  <h4>&#x1F4CA; What You Measure</h4>
+  <ul class="metric-list">
+    <li>Avg Guest Check</li>
+    <li>Items per Guest</li>
+    <li>Dessert Rate</li>
+    <li>Beverage Attach Rate</li>
+  </ul>
+  <p style="margin-top:14px; font-size:0.88em; color:#718096; font-style:italic;">
+    <strong style="color:#a0aec0;">Slice by:</strong> Server (reveals who guides well) · Daypart (reveals timing and room conditions) · Capacity Load (reveals whether the room can support the behavior)
+  </p>
+  <p style="margin-top:8px; font-size:0.88em; color:#718096; font-style:italic;">
+    <strong style="color:#a0aec0;">Note:</strong> These measure how well the visit was converted into average spend. They do not measure whether the meal was delivered well.
+  </p>
+</div>
 
-                                        <div
-                                            style="background: rgba(72, 187, 120, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #48bb78;">
-                                            <strong style="color: #48bb78; font-size: 1.1em;">When Capacity Load Is
-                                                OPTIMAL
-                                                (0.75-0.90)</strong>
-                                            <ul class="metric-list" style="margin-top: 12px;">
-                                                <li>Servers have attention to guide behavior and frame choices</li>
-                                                <li>Room has energy calibrated to your model (social for turnover,
-                                                    intimate for dwell)
-                                                </li>
-                                                <li>Social reinforcement works (guests see others ordering drinks,
-                                                    staying longer)</li>
-                                                <li>Behavioral momentum pulls guests toward intended spending patterns
-                                                </li>
-                                                <li>Energy alignment creates psychological conditions for higher spend
-                                                </li>
-                                            </ul>
-                                            <div
-                                                style="background: rgba(72, 187, 120, 0.15); padding: 15px; border-radius: 8px; margin-top: 15px;">
-                                                <strong>Behavioral Impact:</strong> Framing works, upsells convert,
-                                                guests don't resist
-                                                price, repeat rates climb. This is where behavior monetizes experience.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+<!-- DEEP DIVE -->
+<details class="collapsible">
+  <summary>Deep Dive: Drivers, Suppressors, Context, Actions, and Outcomes</summary>
+  <div class="collapsible-content">
 
-                                <!-- Psychological Drivers of Spending Behavior -->
-                                <div class="insight-box">
-                                    <h4>🧠 Psychological Drivers of Spending Behavior</h4>
-                                    <p style="margin-bottom: 20px;">Beyond operational delivery, these psychological
-                                        factors drive
-                                        whether guests spend more and return:</p>
+    <!-- DEEP DIVE MAP — unifying logic strip -->
+    <div class="deep-map">
+      <div class="deep-map-step dm-drivers">
+        <span class="dms-label">Drivers</span>
+        <span class="dms-sub">create willingness</span>
+      </div>
+      <div class="deep-map-step dm-suppress">
+        <span class="dms-label">Suppressors</span>
+        <span class="dms-sub">create hesitation</span>
+      </div>
+      <div class="deep-map-step dm-context">
+        <span class="dms-label">Context</span>
+        <span class="dms-sub">changes what feels natural</span>
+      </div>
+      <div class="deep-map-step dm-actions">
+        <span class="dms-label">Actions</span>
+        <span class="dms-sub">guide the decision</span>
+      </div>
+      <div class="deep-map-step dm-outcome">
+        <span class="dms-label">Outcome</span>
+        <span class="dms-sub">higher average spend and LTV</span>
+      </div>
+    </div>
 
-                                    <div style="display: grid; gap: 15px;">
-                                        <div
-                                            style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 12px; border-left: 4px solid #667eea;">
-                                            <strong style="color: #667eea; font-size: 1.1em;">Social Status</strong>
-                                            <p style="margin-top: 10px;">Guests spend more when the choice signals
-                                                something positive
-                                                about them to others. "Being seen here" or "ordering this" becomes part
-                                                of identity.</p>
-                                            <p style="margin-top: 10px; font-style: italic; color: #a0aec0;">Behavioral
-                                                lever: Scarcity,
-                                                curation, chef recommendations, exclusivity.</p>
-                                        </div>
+    <!-- A. WHAT DRIVES THE YES -->
+    <div class="deep-section">
+      <h4>&#x1F9E0; A. What Drives the Yes</h4>
+      <p class="intro-note">Average spend rises most easily when hesitation drops. In practice, that happens when uncertainty falls, choices feel simpler, social proof is visible, and the next yes is offered at the right moment.</p>
+      <div class="driver-grid">
+        <div class="driver-card">
+          <span class="driver-label" style="color:#9f7aea;">Choice Confidence</span>
+          <p>Guests spend more when they feel sure they are making a good choice. Clear recommendations and simpler decisions reduce second-guessing and make buying easier.</p>
+        </div>
+        <div class="driver-card">
+          <span class="driver-label" style="color:#667eea;">Social Proof</span>
+          <p>Guests are more likely to say yes when the choice already feels normal, popular, or worth joining. "Most tables start with..." works because it reassures the guest when they are unsure.</p>
+        </div>
+        <div class="driver-card">
+          <span class="driver-label" style="color:#48bb78;">Decision Simplicity</span>
+          <p>The more complex the choice feels, the more likely the guest is to default to the safest, cheapest, or shortest path. Fewer competing options make the yes easier.</p>
+        </div>
+      </div>
+      <div class="highlight-line" style="margin-top:14px;">
+        <strong>When guests are drinking, this matters even more: attention narrows, so simple guidance beats long explanations.</strong>
+      </div>
+    </div>
 
-                                        <div
-                                            style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 12px; border-left: 4px solid #9f7aea;">
-                                            <strong style="color: #9f7aea; font-size: 1.1em;">Psychological Status
-                                                (Feeling Good About
-                                                the Choice)</strong>
-                                            <p style="margin-top: 10px;">Guests need to feel they made the "right"
-                                                decision. Regret
-                                                kills repeat visits. Confidence in choice drives higher spend and return
-                                                likelihood.</p>
-                                            <p style="margin-top: 10px; font-style: italic; color: #a0aec0;">Behavioral
-                                                lever: Social
-                                                proof, expert curation, removing decision fatigue.</p>
-                                        </div>
+    <!-- B. WHAT SUPPRESSES THE YES -->
+    <div class="deep-section warning">
+      <h4>&#x1F6AB; B. What Suppresses the Yes</h4>
+      <p class="intro-note">Spend usually stalls because uncertainty rises, momentum drops, or the team makes the next decision harder than it needs to be.</p>
+      <div class="suppressor-list">
 
-                                        <div
-                                            style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 12px; border-left: 4px solid #48bb78;">
-                                            <strong style="color: #48bb78; font-size: 1.1em;">Energy Alignment (Room
-                                                Matches Intended
-                                                Behavior)</strong>
-                                            <p style="margin-top: 10px;">Room energy creates behavioral momentum. Upbeat
-                                                energy → guests
-                                                order more rounds. Intimate energy → guests linger and order extras.
-                                                Mismatched energy →
-                                                spending suppression.</p>
-                                            <p style="margin-top: 10px; font-style: italic; color: #a0aec0;">Behavioral
-                                                lever: Capacity
-                                                load optimization, music, lighting, pacing, social density.</p>
-                                        </div>
-                                    </div>
+        <div class="suppressor-item">
+          <span class="s-label">Too Many Choices</span>
+          <p>Too many options increase hesitation and push guests toward the safest, lowest-commitment decision.</p>
+        </div>
 
-                                    <div
-                                        style="background: rgba(102, 126, 234, 0.1); padding: 20px; border-radius: 12px; margin-top: 20px; text-align: center;">
-                                        <strong style="font-size: 1.1em;">These are BEHAVIORAL outcomes, not operational
-                                            outputs.</strong>
-                                        <p style="margin-top: 10px;">Experience delivers the product. Behavior creates
-                                            the psychology
-                                            that drives spending.</p>
-                                    </div>
-                                </div>
+        <div class="suppressor-item">
+          <span class="s-label">Weak Timing</span>
+          <p>A good prompt delivered too late is usually a missed opportunity.</p>
+        </div>
 
-                                <!-- Behavioral Value Killer: Emotional Flatness -->
-                                <div class="warning-box">
-                                    <h4>🔴 Behavioral Value Killer: Emotional Flatness</h4>
-                                    <p style="margin-bottom: 15px;"><strong>When operational delivery works but
-                                            psychological framing
-                                            fails</strong></p>
+        <div class="suppressor-item">
+          <span class="s-label">Overloaded Room</span>
+          <p>When the room is too stretched, the team cannot guide — it can only fulfill. See <span class="tag-ref">CAPACITY</span> for the root cause.</p>
+        </div>
 
-                                    <div
-                                        style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 12px; margin-bottom: 15px;">
-                                        <strong
-                                            style="display: block; margin-bottom: 10px; color: #f56565;">Symptoms:</strong>
-                                        <ul class="metric-list">
-                                            <li>Food arrives correctly, but experience feels forgettable</li>
-                                            <li>No stories, no framing, no "moment"</li>
-                                            <li>Service is polite but transactional</li>
-                                        </ul>
-                                    </div>
+        <div class="suppressor-item">
+          <span class="s-label">Pushy Selling</span>
+          <p>Pressure increases resistance. Guests pull back when they feel sold instead of helped.</p>
+        </div>
 
-                                    <div
-                                        style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 12px; margin-bottom: 15px;">
-                                        <strong style="display: block; margin-bottom: 10px; color: #ecc94b;">Metrics
-                                            that reveal
-                                            it:</strong>
-                                        <ul class="metric-list">
-                                            <li>Avg check flat despite time available</li>
-                                            <li>Low dessert attach rate</li>
-                                            <li>Low repeat behavior</li>
-                                        </ul>
-                                    </div>
+        <div class="suppressor-item">
+          <span class="s-label">Unclear Recommendation</span>
+          <p>When the team sounds unsure, lists too many options, or leaves the guest to decode the menu alone, hesitation rises.</p>
+        </div>
 
-                                    <div
-                                        style="background: rgba(72, 187, 120, 0.1); padding: 20px; border-radius: 12px;">
-                                        <strong style="display: block; margin-bottom: 10px; color: #48bb78;">Fix
-                                            (Behavioral):</strong>
-                                        <ul class="metric-list">
-                                            <li>Story-based scripts ("This dish was inspired by...")</li>
-                                            <li>Chef mentions (authority + personalization)</li>
-                                            <li>"Why this dish exists" cues (creates meaning)</li>
-                                            <li>Peak-end moments (memorable highlights)</li>
-                                        </ul>
-                                        <p style="margin-top: 15px; font-style: italic; color: #a0aec0;">
-                                            <strong>This is purely behavioral.</strong> Operational delivery is fine.
-                                            Psychological
-                                            framing is missing.
-                                        </p>
-                                    </div>
-                                </div>
+      </div>
+      <div class="closing-line">Pressure shrinks value. Guidance expands it.</div>
+    </div>
 
-                                <!-- Psychological Value Equation -->
-                                <div class="value-equation">
-                                    <h4>🎯 The Psychological Value Equation</h4>
-                                    <p style="margin-bottom: 20px; font-style: italic; color: #a0aec0;">This is HOW
-                                        guests perceive the
-                                        value we delivered. See <strong>EXPERIENCE</strong> for the operational equation
-                                        (what we
-                                        actually deliver).</p>
+    <!-- C. ROOM ENERGY AND SPEND BEHAVIOR -->
+    <div class="deep-section context">
+      <h4>&#x26A1; C. Room Energy and Spend Behavior</h4>
+      <p class="intro-note">Room energy shapes what kind of spending feels natural inside the visit.</p>
+      <div class="suppressor-list">
+        <div class="suppressor-item" style="border-left-color:#48bb78;">
+          <span class="s-label" style="color:#48bb78;">Turnover model</span>
+          <p>Social, upbeat energy makes another round, another shared item, or a faster next yes feel natural.</p>
+        </div>
+        <div class="suppressor-item" style="border-left-color:#667eea;">
+          <span class="s-label" style="color:#667eea;">Dwell model</span>
+          <p>Ease and comfort make lingering feel worth it long enough for drinks, dessert, or one more course to happen.</p>
+        </div>
+        <div class="suppressor-item">
+          <span class="s-label">Mismatch</span>
+          <p>When the room energy works against the model, spend softens. Guests pull back, close out earlier, or choose the safer version of the visit.</p>
+        </div>
+      </div>
+      <div class="highlight-line" style="margin-top:14px;">
+        <strong>This is not about whether the room is busy. It is about whether the room makes the next purchase feel natural.</strong>
+      </div>
+    </div>
 
-                                    <div class="equation-formula">
-                                        Perceived Value = (Dream Outcome × Perceived Likelihood) ÷ (Time Delay × Effort
-                                        & Sacrifice)
-                                    </div>
+    <!-- D. HOW THE TEAM GUIDES THE YES -->
+    <div class="deep-section">
+      <h4>&#x1F3AF; D. How the Team Guides the Yes</h4>
+      <p class="intro-note">These are hospitality actions that reduce hesitation and make higher-value buying decisions easier to say yes to. The key is not just what to do, but when to do it.</p>
+      <div class="tool-list">
 
-                                    <div class="value-levers">
-                                        <div class="value-lever-box">
-                                            <h5>🟢 Dream Outcome (Psychological)</h5>
-                                            <ul class="metric-list">
-                                                <li>Feeling taken care of</li>
-                                                <li>Feeling "in on something"</li>
-                                                <li>Feeling relaxed and indulged</li>
-                                                <li>Social status (being seen here matters)</li>
-                                                <li>Psychological status (feeling good about the choice)</li>
-                                                <li>Identity alignment ("this is my kind of place")</li>
-                                            </ul>
-                                        </div>
+        <div class="tool-item">
+          <div class="tool-num">1</div>
+          <div class="tool-body">
+            <h5>Confident Pairing Recommendations</h5>
+            <p>A confident recommendation reduces uncertainty. It works best when the guest is deciding between options and wants to feel sure they are choosing well.</p>
+            <div class="tool-example">"The halibut is the move tonight — and it goes perfectly with the Sancerre." <strong>Specific, certain, easy to follow.</strong></div>
+          </div>
+        </div>
 
-                                        <div class="value-lever-box">
-                                            <h5>🟢 Perceived Likelihood (Trust)</h5>
-                                            <ul class="metric-list">
-                                                <li>Confident server recommendations (authority)</li>
-                                                <li>Social proof (others ordering same thing)</li>
-                                                <li>Brand reputation (past experiences)</li>
-                                                <li>Visible signals of competence (clean kitchen, organized service)
-                                                </li>
-                                                <li>Menu curation (fewer choices = more trust)</li>
-                                            </ul>
-                                        </div>
+        <div class="tool-item">
+          <div class="tool-num">2</div>
+          <div class="tool-body">
+            <h5>Curated Suggestions</h5>
+            <p>Curated suggestions reduce choice overload. Use them when guests hesitate, ask broad questions, or look stuck between too many options.</p>
+            <div class="tool-example">"If you want something richer, go short rib. If you want something lighter, go duck." <strong>Two paths. Easy choice.</strong></div>
+          </div>
+        </div>
 
-                                        <div class="value-lever-box">
-                                            <h5>🟢 Time Delay (Psychological Waiting Cost)</h5>
-                                            <ul class="metric-list">
-                                                <li>Patience threshold (how long they'll wait)</li>
-                                                <li>Immediate gratification need</li>
-                                                <li>Early acknowledgment (reduces perceived wait)</li>
-                                                <li>Progress indicators (apps arriving builds momentum)</li>
-                                            </ul>
-                                        </div>
+        <div class="tool-item">
+          <div class="tool-num">3</div>
+          <div class="tool-body">
+            <h5>Guided Progression</h5>
+            <p>Guided progression makes the next yes more natural and more visible. It works best while momentum is still open, before the table emotionally moves on from the course in front of them.</p>
+            <div class="tool-example">Cocktail first → starter next → entrée → dessert or second round. <strong>Each yes makes the next one easier.</strong></div>
+          </div>
+        </div>
 
-                                        <div class="value-lever-box">
-                                            <h5>🟢 Effort & Sacrifice (Psychological Friction)</h5>
-                                            <ul class="metric-list">
-                                                <li>Price perception (not actual price, how it feels)</li>
-                                                <li>Decision fatigue (too many choices)</li>
-                                                <li>Menu decoding effort (confusing descriptions)</li>
-                                                <li>Regret risk ("what if I order wrong?")</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+        <div class="tool-item">
+          <div class="tool-num">4</div>
+          <div class="tool-body">
+            <h5>Bundles Near Singles</h5>
+            <p>Bundles near singles simplify comparison. When the fuller option feels only slightly bigger in price but clearly better in value, guests justify it more easily.</p>
+            <div class="tool-example">Steak $42 &nbsp;·&nbsp; Steak + two sides + sauce $49. <strong>The fuller option feels smarter, not pushier.</strong></div>
+          </div>
+        </div>
 
-                                    <div
-                                        style="background: rgba(102, 126, 234, 0.1); padding: 20px; border-radius: 12px; margin-top: 20px; border-left: 4px solid #667eea;">
-                                        <strong style="color: #667eea; font-size: 1.1em;">Same Product, Different
-                                            Perception</strong>
-                                        <p style="margin-top: 10px;">Two guests get the SAME operational experience. One
-                                            perceives high
-                                            value (framed well), one perceives low value (not framed).</p>
-                                        <p style="margin-top: 10px;"><strong>This is the power of behavioral
-                                                framing.</strong></p>
-                                    </div>
+        <div class="tool-item">
+          <div class="tool-num">5</div>
+          <div class="tool-body">
+            <h5>Refill Prompt Timing</h5>
+            <p>Refill prompt timing uses salience and timing to remove hesitation before the moment passes. It works best before the glass is empty and before the table shifts into closing mode.</p>
+            <div class="tool-example">"Same again, or would you like to try something different?" <strong>Better timing, easier yes.</strong></div>
+          </div>
+        </div>
 
-                                    <div
-                                        style="background: rgba(72, 187, 120, 0.1); padding: 20px; border-radius: 12px; margin-top: 20px; border-left: 4px solid #48bb78;">
-                                        <strong style="color: #48bb78;">How to Use This Equation:</strong>
-                                        <p style="margin-top: 10px;">Every behavioral technique in this section
-                                            manipulates one or more
-                                            variables in this equation:</p>
-                                        <ul class="metric-list" style="margin-top: 10px;">
-                                            <li>Curated pairings → Increase Dream Outcome + reduce Effort</li>
-                                            <li>Chef recommendations → Increase Perceived Likelihood</li>
-                                            <li>Early appetizers → Reduce Time Delay perception</li>
-                                            <li>Anchoring → Reduce Effort & Sacrifice (price feels better)</li>
-                                        </ul>
-                                    </div>
-                                </div>
+        <div class="tool-item">
+          <div class="tool-num">6</div>
+          <div class="tool-body">
+            <h5>Early Openers</h5>
+            <p>An early yes can break hesitation and create momentum for the rest of the visit. This works best early, before ordering confidence fully settles and while the table is still open to direction.</p>
+            <div class="tool-example">"Would you like something small to start while you settle in?" <strong>Early momentum changes the rest of the check.</strong></div>
+          </div>
+        </div>
 
-                                <!-- Making Higher Prices Feel Like a Deal -->
-                                <div class="psychology-box">
-                                    <h4>🧠 Making Higher Prices Feel Like a Deal</h4>
-                                    <p style="margin-bottom: 20px; font-size: 1.1em;">A price feels like a deal when at
-                                        least two of
-                                        these are true:</p>
+      </div>
+    </div>
 
-                                    <ul class="metric-list" style="font-size: 1.05em;">
-                                        <li>It's compared to something worse</li>
-                                        <li>It's framed as curated, not chosen</li>
-                                        <li>It removes effort or risk</li>
-                                        <li>It upgrades identity or status</li>
-                                        <li>It feels scarce or intentional</li>
-                                    </ul>
+    <!-- E. HOW BEHAVIOR LIFTS AVERAGE SPEND AND LTV -->
+    <div class="deep-section ltv">
+      <h4>&#x1F4B0; E. How Behavior Lifts Average Spend and LTV</h4>
+      <p style="margin-bottom:12px;">This node is focused on average spend first.</p>
+      <p style="font-size:0.9em; color:#a0aec0; margin-bottom:16px;">When the team reduces hesitation and guides the next buying decision well, the guest spends more in the visit. Repeated across visits, that lifts lifetime value too.</p>
 
-                                    <div
-                                        style="background: rgba(0, 0, 0, 0.4); padding: 25px; border-radius: 12px; margin-top: 25px;">
-                                        <strong style="font-size: 1.2em; display: block; margin-bottom: 20px;">Concrete
-                                            Example:
-                                            Appetizers</strong>
+      <div class="ltv-grid">
+        <div class="ltv-col baseline">
+          <span class="ltv-label">Without Strong Guidance</span>
+          <div class="ltv-math">$40 average spend × 6 visits/year × 4 years</div>
+          <div class="ltv-result">= $960 LTV</div>
+        </div>
+        <div class="ltv-col guided">
+          <span class="ltv-label">With Strong Guidance</span>
+          <div class="ltv-math">$48 average spend × 6 visits/year × 4 years</div>
+          <div class="ltv-result">= $1,152 LTV</div>
+        </div>
+      </div>
 
-                                        <div
-                                            style="background: rgba(245, 101, 101, 0.1); padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                                            <p style="color: #f56565; font-weight: 600;">Bad framing:</p>
-                                            <p style="margin-top: 8px;">"Our apps are $15."</p>
-                                            <p style="margin-top: 8px; font-style: italic; color: #a0aec0;">Feels
-                                                expensive. No context.
-                                            </p>
-                                        </div>
+      <div class="highlight-line" style="margin-top:4px;">
+        <strong>Raise average spend in the visit, and LTV rises with it.</strong>
+      </div>
+    </div>
 
-                                        <div
-                                            style="background: rgba(72, 187, 120, 0.1); padding: 15px; border-radius: 8px;">
-                                            <p style="color: #48bb78; font-weight: 600;">Good framing:</p>
-                                            <p style="margin-top: 8px;">"Most tables start with our three-for-$15
-                                                tasting trio. It's
-                                                designed for sharing."</p>
-                                            <p style="margin-top: 12px;"><strong>Now $15 feels:</strong></p>
-                                            <ul class="metric-list" style="margin-top: 8px;">
-                                                <li>Efficient</li>
-                                                <li>Social</li>
-                                                <li>Intentional</li>
-                                            </ul>
-                                            <p style="margin-top: 12px; font-weight: 600; color: #48bb78;">Same price.
-                                                Higher uptake.
-                                            </p>
-                                        </div>
-                                    </div>
+  </div><!-- /collapsible-content -->
+</details>
 
-                                    <div
-                                        style="background: rgba(0, 0, 0, 0.4); padding: 25px; border-radius: 12px; margin-top: 25px;">
-                                        <strong style="font-size: 1.2em; display: block; margin-bottom: 20px;">Concrete
-                                            Example:
-                                            Drinks</strong>
+</div><!-- /node-content -->
 
-                                        <div
-                                            style="background: rgba(245, 101, 101, 0.1); padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                                            <p style="color: #f56565; font-weight: 600;">Bad:</p>
-                                            <p style="margin-top: 8px;">"Vodka soda is $14."</p>
-                                        </div>
-
-                                        <div
-                                            style="background: rgba(72, 187, 120, 0.1); padding: 15px; border-radius: 8px;">
-                                            <p style="color: #48bb78; font-weight: 600;">Good:</p>
-                                            <p style="margin-top: 8px;">"Our most popular cocktail uses Grey Goose. It's
-                                                $16 and pairs
-                                                perfectly with the tacos."</p>
-                                            <p style="margin-top: 12px; font-weight: 600; color: #48bb78;">Higher price.
-                                                Higher
-                                                perceived value.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Why This Matters -->
-                                <div class="insight-box">
-                                    <h4>🔑 Why This Matters So Much</h4>
-                                    <p style="font-size: 1.1em; margin-bottom: 15px;"><strong>Every early decision sets
-                                            a spending
-                                            ceiling.</strong></p>
-                                    <p>If guests:</p>
-                                    <ul class="metric-list" style="margin-top: 10px;">
-                                        <li>Start cheap</li>
-                                        <li>Order late</li>
-                                        <li>Feel rushed</li>
-                                    </ul>
-                                    <p style="margin-top: 15px;">They self-limit spend.</p>
-                                    <p
-                                        style="margin-top: 20px; padding: 15px; background: rgba(72, 187, 120, 0.1); border-radius: 8px;">
-                                        <strong>Behavior framing increases: Avg check, Items per guest, Beverage count,
-                                            LTV</strong><br>
-                                        <span style="margin-top: 10px; display: block; font-style: italic;">All without
-                                            more
-                                            labor.</span>
-                                    </p>
-                                </div>
-
-                                <!-- Behavioral Monetization Vehicles -->
-                                <div class="psychology-box">
-                                    <h4>🎯 Behavioral Monetization Vehicles</h4>
-                                    <p style="margin-bottom: 20px; color: #a0aec0;">These are behavioral levers, not
-                                        add-ons.</p>
-
-                                    <div class="psych-grid">
-                                        <div class="psych-item">
-                                            <h5>1. Curated Pairings</h5>
-                                            <p style="margin-bottom: 10px;"><strong>Why they work:</strong></p>
-                                            <ul class="metric-list">
-                                                <li>Remove choice fatigue</li>
-                                                <li>Signal expertise</li>
-                                                <li>Reduce risk</li>
-                                            </ul>
-                                            <div
-                                                style="background: rgba(0, 0, 0, 0.3); padding: 12px; border-radius: 8px; margin-top: 12px;">
-                                                <strong>Example:</strong>
-                                                <p style="margin-top: 8px;">"This dish is designed with this cocktail."
-                                                </p>
-                                                <p style="margin-top: 8px; font-style: italic; color: #a0aec0;">That
-                                                    sentence alone
-                                                    increases attach.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="psych-item">
-                                            <h5>2. Chef Moments</h5>
-                                            <p style="margin-bottom: 10px;"><strong>Why they work:</strong></p>
-                                            <ul class="metric-list">
-                                                <li>Authority bias</li>
-                                                <li>Emotional peak</li>
-                                                <li>Memory anchor</li>
-                                            </ul>
-                                            <div
-                                                style="background: rgba(0, 0, 0, 0.3); padding: 12px; border-radius: 8px; margin-top: 12px;">
-                                                <strong>Example:</strong>
-                                                <ul class="metric-list" style="margin-top: 8px;">
-                                                    <li>Chef explains one dish per night</li>
-                                                    <li>Limited quantity</li>
-                                                    <li>Tied to story or ingredient</li>
-                                                </ul>
-                                                <p style="margin-top: 8px; font-style: italic; color: #a0aec0;">Price
-                                                    resistance
-                                                    collapses.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="psych-item">
-                                            <h5>3. Guided Progression</h5>
-                                            <p style="margin-bottom: 10px;"><strong>Why it works:</strong></p>
-                                            <ul class="metric-list">
-                                                <li>Spending momentum</li>
-                                                <li>Commitment bias</li>
-                                            </ul>
-                                            <div
-                                                style="background: rgba(0, 0, 0, 0.3); padding: 12px; border-radius: 8px; margin-top: 12px;">
-                                                <strong>Example flow:</strong>
-                                                <ul class="metric-list" style="margin-top: 8px;">
-                                                    <li>Cocktail</li>
-                                                    <li>Shared starter</li>
-                                                    <li>Entrée</li>
-                                                    <li>Dessert sampler</li>
-                                                </ul>
-                                                <p style="margin-top: 8px; font-style: italic; color: #a0aec0;">Each
-                                                    step legitimizes
-                                                    the next.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="psych-item">
-                                            <h5>4. Bundles Near Singles</h5>
-                                            <p style="margin-bottom: 10px;"><strong>Why it works:</strong></p>
-                                            <ul class="metric-list">
-                                                <li>Bundle feels complete</li>
-                                                <li>Single feels insufficient</li>
-                                            </ul>
-                                            <div
-                                                style="background: rgba(0, 0, 0, 0.3); padding: 12px; border-radius: 8px; margin-top: 12px;">
-                                                <strong>Example:</strong>
-                                                <p style="margin-top: 8px;">Steak $42</p>
-                                                <p>Steak + two sides + sauce $49</p>
-                                                <p style="margin-top: 8px; font-style: italic; color: #48bb78;">Most
-                                                    guests choose $49.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="psych-item">
-                                            <h5>5. Refill Prompts</h5>
-                                            <p style="margin-bottom: 10px;"><strong>Why they work:</strong></p>
-                                            <ul class="metric-list">
-                                                <li>Guests don't want to appear excessive</li>
-                                                <li>Prompt removes social friction</li>
-                                            </ul>
-                                            <div
-                                                style="background: rgba(0, 0, 0, 0.3); padding: 12px; border-radius: 8px; margin-top: 12px;">
-                                                <strong>Example:</strong>
-                                                <p style="margin-top: 8px;">"Same again, or would you like to try
-                                                    something different?"
-                                                </p>
-                                                <p style="margin-top: 8px; font-style: italic; color: #a0aec0;">This
-                                                    doubles drink
-                                                    volume without pressure.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="warning-box">
-                                    <h4>🚫 Wrong Behavioral Fixes</h4>
-                                    <p style="margin-bottom: 15px;">These don't just fail. They actively reduce value.
-                                    </p>
-                                    <ul class="metric-list">
-                                        <li>❌ "Sell harder" → Increases resistance, lowers perceived care</li>
-                                        <li>❌ More rules → Kills autonomy, reduces warmth</li>
-                                        <li>❌ Removing choice entirely → Triggers loss aversion, feels controlling</li>
-                                        <li>❌ Discounting to compensate → Trains guests to wait, lowers trust in full
-                                            price</li>
-                                    </ul>
-                                    <p
-                                        style="margin-top: 15px; padding: 15px; background: rgba(0, 0, 0, 0.3); border-radius: 8px;">
-                                        <strong style="color: #f56565;">Pressure shrinks value. Guidance expands
-                                            it.</strong>
-                                    </p>
-                                </div>
-
-                                <!-- LTV: Lifetime Value (Behavioral Maximization) -->
-                                <div class="ltv-box">
-                                    <h4>💰 LTV: Lifetime Value (Behavioral Maximization)</h4>
-                                    <p style="margin-bottom: 20px;"><strong>Behavior determines HOW MUCH guests spend
-                                            when they return
-                                            and HOW OFTEN they come back.</strong></p>
-                                    <p style="margin-bottom: 20px; font-style: italic; color: #a0aec0;">See
-                                        <strong>EXPERIENCE</strong>
-                                        for how operational consistency creates the foundation. This section shows how
-                                        behavioral
-                                        framing MULTIPLIES LTV.
-                                    </p>
-
-                                    <div class="ltv-formula">
-                                        <div class="formula">LTV = Avg Spend × Visit Frequency × Retention Period</div>
-
-                                        <div
-                                            style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 12px; margin-top: 20px;">
-                                            <strong
-                                                style="display: block; margin-bottom: 15px; color: #667eea;">Behavioral
-                                                Levers on
-                                                Each Variable:</strong>
-
-                                            <div style="margin-bottom: 20px;">
-                                                <strong style="color: #48bb78;">↑ Avg Spend (Behavioral):</strong>
-                                                <ul class="metric-list" style="margin-top: 8px;">
-                                                    <li>Framing techniques make higher prices feel like deals</li>
-                                                    <li>Upsell strategies increase items per guest</li>
-                                                    <li>Pairing prompts drive beverage attach</li>
-                                                    <li>Anchoring makes premium items feel reasonable</li>
-                                                </ul>
-                                            </div>
-
-                                            <div style="margin-bottom: 20px;">
-                                                <strong style="color: #48bb78;">↑ Visit Frequency (Behavioral):</strong>
-                                                <ul class="metric-list" style="margin-top: 8px;">
-                                                    <li>Energy alignment creates habit ("my spot")</li>
-                                                    <li>Social reinforcement builds routine</li>
-                                                    <li>Psychological status ("I make good choices coming here")</li>
-                                                    <li>Identity alignment ("I'm a regular")</li>
-                                                </ul>
-                                            </div>
-
-                                            <div>
-                                                <strong style="color: #48bb78;">↑ Retention Period
-                                                    (Behavioral):</strong>
-                                                <ul class="metric-list" style="margin-top: 8px;">
-                                                    <li>Psychological loyalty (not just operational satisfaction)</li>
-                                                    <li>Social status maintained by returning</li>
-                                                    <li>Behavioral momentum keeps them coming back</li>
-                                                    <li>Energy alignment preference (they like how the room feels)</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        style="background: rgba(102, 126, 234, 0.1); padding: 25px; border-radius: 12px; margin-top: 25px; border-left: 4px solid #667eea;">
-                                        <strong
-                                            style="font-size: 1.2em; display: block; margin-bottom: 15px; color: #667eea;">LTV
-                                            Compounding Example:</strong>
-                                        <p style="margin-bottom: 15px;">Baseline guest (operational delivery only, no
-                                            behavioral
-                                            framing):</p>
-                                        <p style="padding: 15px; background: rgba(0, 0, 0, 0.3); border-radius: 8px;">
-                                            <strong>$40 spend × 6 visits/year × 4 years = $960 LTV</strong>
-                                        </p>
-
-                                        <p style="margin-top: 20px; margin-bottom: 15px;">Same guest WITH behavioral
-                                            framing:</p>
-                                        <ul class="metric-list" style="margin-bottom: 15px;">
-                                            <li>Upsells increase spend: $40 → $48 (+20%)</li>
-                                            <li>Habit formation increases frequency: 6 → 8 visits/year (+33%)</li>
-                                            <li>Psychological loyalty extends retention: 4 → 5 years (+25%)</li>
-                                        </ul>
-                                        <p
-                                            style="padding: 15px; background: rgba(72, 187, 120, 0.15); border-radius: 8px;">
-                                            <strong style="color: #48bb78; font-size: 1.2em;">$48 × 8 × 5 = $1,920
-                                                LTV</strong>
-                                        </p>
-                                        <p style="margin-top: 15px; font-size: 1.1em; text-align: center;">
-                                            <strong>+$960 from the same guest (+100% LTV growth)</strong>
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        style="background: rgba(72, 187, 120, 0.1); padding: 20px; border-radius: 12px; margin-top: 20px; border-left: 4px solid #48bb78; text-align: center;">
-                                        <strong style="font-size: 1.2em; color: #48bb78;">This is Hormozi's Retention
-                                            Layer</strong>
-                                        <p style="margin-top: 10px;">Good operational experience gets them back. Good
-                                            behavioral framing
-                                            gets them back MORE OFTEN, spending MORE, for LONGER.</p>
-                                        <p style="margin-top: 15px;"><strong>LTV is where behavior compounds into
-                                                profit.</strong></p>
-                                    </div>
-                                </div>
-
-                            </div><!-- /collapsible-content -->
-                        </details>
-
-                    </div>
-                </div>
-            </div>
-
+</div><!-- /node-card -->
+</div><!-- /flow-node -->
